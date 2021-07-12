@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBAction func novaFrase(_ sender: Any) {
         
         var frases: [String] = []
-        frases.append("Nunca deixe ninguém te dizer que não pode fazer alguma coisa. Se você tem um sonho tem que correr atrás dele. As pessoas não conseguem vencer e dizem que você também não vai vencer. Se você quer uma coisa corre atrás")
+        frases.append("Nunca deixe ninguém te dizer que não pode fazer alguma coisa. Se você tem um sonho tem que correr atrás dele.")
         
         frases.append("As pessoas costumam dizer que a motivação não dura sempre. Bem, nem o efeito do banho, por isso recomenda-se diariamente.")
         
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         
         frases.append("Sofremos muito com o pouco que nos falta e gozamos pouco o muito que temos.")
 
-        let randomNumber = arc4random_uniform(22)
+        let randomNumber = arc4random_uniform(20)
         LabelFrase.text = frases[Int(randomNumber)]
         
     }
